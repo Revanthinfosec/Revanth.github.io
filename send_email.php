@@ -1,23 +1,27 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
+    // Retrieve form data
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
-
-    // Set up email headers
-    $to = "prevanth.data@gmail.com"; // Your Gmail address
-    $subject = "Contact Form Submission";
+    
+    // Set email headers
+    $headers = "From: $name <$email>\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    
+    // Email subject and content
+    $subject = "Message from Contact Form";
     $body = "Name: $name\nEmail: $email\nMessage: $message";
-    $headers = "From: $name <$email>";
-
+    
     // Send email
-    if (mail($to, $subject, $body, $headers)) {
-        echo "Message sent successfully.";
+    $recipient = "prevanth.data@gmail.com";
+    if (mail($recipient, $subject, $body, $headers)) {
+        echo "Your message has been sent successfully.";
     } else {
-        echo "Failed to send message. Please try again later.";
+        echo "Sorry, there was an error sending your message.";
     }
 } else {
-    echo "Error: Invalid request.";
+    echo "Method Not Allowed";
 }
 ?>
