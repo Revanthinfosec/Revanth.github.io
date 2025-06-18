@@ -1,7 +1,10 @@
+here is html
 <!DOCTYPE HTML>
+
 <html>
 	<head>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8CMKX8P770"></script>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8CMKX8P770"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -49,48 +52,9 @@
             transform: scale(1.05);
         }
 
-        /* --- START Modifications for Intro Section White Space --- */
-
-        /* Reduce overall vertical padding of the section */
-        #top.one.dark.cover {
-            padding: 5em 0; /* Reduced from 10em. Adjust as needed. */
-        }
-        /* OR to be more general for all sections inside #main */
-        #main > section {
-            padding: 2em 2em; /* Reduced from 4em 0, added horizontal padding as well. */
-        }
-        /* If you only want to affect the 'top' section: */
-        #main #top {
-            padding-top: 2em; /* Adjust this for space above header */
-            padding-bottom: 3em; /* Adjust this for space below button */
-        }
-
-
-        /* Reduce margin below the header (which contains H2 and P) */
-        #top header {
-            margin-bottom: 0.5em; /* Reduced from 2em. You can try 0. */
-        }
-
-        /* Reduce margin below the main description paragraph */
-        #top header p {
-            margin-bottom: 1em; /* Reduced from 2em. You can try 0.5em or 0. */
-        }
-
-        /* Reduce margin above the footer (which contains the button) */
-        #top footer {
-            margin-top: 1em; /* Reduced from 2em. You can try 0.5em or 0. */
-        }
-
-        /* If the button itself has extra space, you might need to target .button specifically.
-           Based on your provided CSS for .button, it has `margin-top: 10px;`,
-           but the primary issue is likely the footer's margin.
-        */
-        .button, .scrolly {
-            margin-top: 10px; /* Keep this if you want some space between the text and button */
-        }
-
-
-        /* --- END Modifications --- */
+        section {
+            padding: 4em 2em;
+        }
 
         section h2 {
             font-size: 2rem;
@@ -162,16 +126,19 @@
 	</head>		
 	<body class="is-preload">
 
-		<div id="header">
+		<!-- Header -->
+			<div id="header">
 
 				<div class="top">
 
-					<div id="logo">
+					<!-- Logo -->
+						<div id="logo">
 							<h1 id="title">Revanth</h1>
 							<p>Data Analyst and Engineer</p>
 						</div>
 
-					<nav id="nav">
+					<!-- Nav -->
+						<nav id="nav">
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
@@ -184,9 +151,11 @@
 
 			</div>
 
-		<div id="main">
+		<!-- Main -->
+			<div id="main">
 
-				<section id="top" class="one dark cover">
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
 						<div class="container">
 
 							<header>
@@ -202,6 +171,7 @@
 						</div>
 					</section>
 
+<!-- Portfolio -->
 <section id="portfolio" class="two">
     <div class="container">
 
@@ -210,7 +180,8 @@
         </header>
         <p>Welcome to my portfolio! I'm Revanth, a Data Engineer based in the United States, and I am open to relocation as required. With software engineering, data analysis, and cloud technologies expertise, I'm here to showcase my projects and skills. Let's explore the world of data together. Here are some projects for you to check out!</p>
         <div class="row">
-            <div class="col-6 col-12-mobile">                 <article class="item">
+            <div class="col-6 col-12-mobile"> <!-- Splitting the screen equally -->
+                <article class="item">
                     <a href="#" class="image fit"><img src="images/pic02.png" alt="" /></a>
                     <header>
                         <h3 style="color: Black; font-weight: bold;">Data Cleaning Project using pandas</h3>
@@ -227,7 +198,8 @@
                     </header>
                 </article>
             </div>
-            <div class="col-6 col-12-mobile">                 <article class="item">
+            <div class="col-6 col-12-mobile"> <!-- Splitting the screen equally -->
+                <article class="item">
                     <a href="#" class="image fit"><img src="https://www.amarinfotech.com/wp-content/uploads/2020/04/Web-Scraping.jpg" alt="" /></a>
                     <header>
                         <h3 style="color: black; font-weight: bold;" >Webscrapping</h3>
@@ -251,6 +223,7 @@
 
 							
 
+<!-- Tableau Projects -->
         <section id="tableau" class="three">
             <div class="container">
                 <header>
@@ -292,6 +265,7 @@
                 </div>
             </div>
         </section>
+<!-- About Me -->
 <section id="about" class="three">
 	<div class="container">
 
@@ -306,7 +280,9 @@
 			 Let's turn your data dreams into reality!</p>
 	</div>
 </section>
-				<section id="contact" class="four">
+				<!-- Contact -->
+					
+<section id="contact" class="four">
     <div class="container">
         <header>
             <h2>Contact / Hire me</h2>
@@ -322,6 +298,7 @@
 			</div>
 		
 		
+		<!-- Social Media Icons at the Bottom -->
 		<footer>
 			<div class="container">
 				<ul class="icons">
@@ -334,7 +311,8 @@
 		</footer>
 		
 
-		<script src="assets/js/jquery.min.js"></script>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
