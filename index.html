@@ -17,6 +17,108 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 		 <style>
+			 body {
+				 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			 }
+			 #header {
+				 background: linear-gradient(135deg, #007bff, #0056b3);
+				 padding: 2rem 1rem;
+				 text-align: center;
+				 color: white;
+			 }
+			 #header #logo h1 {
+				 font-size: 2.5rem;
+				 margin-bottom: 0.2em;
+			 }
+			 .button, .scrolly{
+				 background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .button:hover, .scrolly:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 4em 2em;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1em;
+        }
+
+        .item header {
+            padding: 1em 0;
+        }
+
+        .item img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .col-6, .col-4 {
+            flex: 1 1 45%;
+            max-width: 45%;
+        }
+
+        .col-12-mobile {
+            max-width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #f1f1f1;
+        }
+
+        footer .icons {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer .icons li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        footer .icons a {
+            color: #333;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        footer .icons a:hover {
+            color: #007bff;
+        }
+
+        @media screen and (max-width: 768px) {
+            .col-6, .col-4 {
+                max-width: 100%;
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+				 
+				 
         /* Additional CSS to center the footer icons */
         footer {
             text-align: center;
@@ -56,6 +158,10 @@
             background-color: #0056b3; /* Hover background color */
             color: #ffffff; /* Hover text color */
         } 		 
+
+
+
+				 
     </style>		
 	</head>		
 	<body class="is-preload">
